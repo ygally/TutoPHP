@@ -8,7 +8,7 @@
         
         // Step 3: Clean up and format the data
         // Remove <p> tags, and immediately following line returns
-        $contents = str_replace(["<p>", "</p>\n"], ['', ''], $contents);
+        $contents = str_replace(["<p>", "</p>\n"], '', $contents);
         
         // Step 4: Write the cleaned data to a new valid CSV file
         file_put_contents($output_file, $contents);
